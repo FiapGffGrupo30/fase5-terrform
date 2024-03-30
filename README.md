@@ -3,8 +3,6 @@
 A infraestrutura foi separada em modulos para a execução do terraform:
 
 - AWS API Gateway
-- AWS Cognito
-- AWS Lambda
 - AWS ECR
 - AWS ECS FARGATE
 - AWS Load Balancer
@@ -29,6 +27,7 @@ São aplicados pelo terraform as configurações de infra desde recursos a serem
 - Load Balancer - Balanceador de Carga
 - Grupo de Segurança - Restrição de permissionamento de entrada e saída
 - VPC - Separação de redes públicas e privadas
+- NAT Gateway - Utilizado para que as instâncias das sub-redes privadas se conectem aos serviços fora da VPC.
 - Cloudwatch - Visualização de Log's
-- Document DB - Utilizado para um banco NoSql, neste caso um Mongo DB.
+- PostgreSQL - Banco de dado MySQL.
 - RDS - Banco de dado MySQL
