@@ -13,7 +13,7 @@ A infraestrutura foi separada em modulos para a execução do terraform:
 - NAT Gateway (AWS)
 - VPC (AWS)
 - Cloudwatch
-- Document DB (MONGO)
+- PostgreSQL
 - RDS (MySQL)
 
 ![texto](imagens/infra.jpg)
