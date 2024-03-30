@@ -9,3 +9,7 @@ resource "aws_ecr_repository" "repo-payments" {
 resource "aws_ecr_repository" "repo-users" {
   name = var.ecr_repository_name_users
 }
+
+//resource "aws_ecr_repository" "repo-products" {
+//  name = var.ecr_repository_name_products
+//}
