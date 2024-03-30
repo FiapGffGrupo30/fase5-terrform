@@ -9,7 +9,3 @@ output "ecr_repository_url_payments" {
 output "ecr_repository_url_users" {
   value = aws_ecr_repository.repo-users
 }
-
-output "ecr_repository_url_products" {
-  value = aws_ecr_repository.repo-products
-}

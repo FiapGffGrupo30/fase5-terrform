@@ -12,7 +12,6 @@ variable "service_name" {}
 variable "ecr_repository_name_requests" {}
 variable "ecr_repository_name_payments" {}
 variable "ecr_repository_name_users" {}
-//variable "ecr_repository_name_products" {}
 variable "selected_subnets" {
   type    = list(string)
   default = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24", "10.0.4.0/24"]
@@ -20,4 +19,3 @@ variable "selected_subnets" {
 variable "ecs_service_requests" {}
 variable "ecs_service_payments" {}
 variable "ecs_service_users" {}
-//variable "ecs_service_products" {}

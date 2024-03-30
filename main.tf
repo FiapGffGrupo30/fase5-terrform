@@ -32,11 +32,6 @@ module "security-group" {
   vpc_id = module.new-vpc.vpc_id
 }
 
-//module "target-group" {
-//  source = "./modules/target_group"
-//  vpc_id = module.new-vpc.vpc_id
-//}
-
 module "load_balance" {
   source            = "./modules/load_balance"
   vpc_id            = module.new-vpc.vpc_id
@@ -51,7 +46,6 @@ module "ecr_repository" {
   ecr_repository_name_requests   = var.ecr_repository_name_requests
   ecr_repository_name_payments   = var.ecr_repository_name_payments
   ecr_repository_name_users      = var.ecr_repository_name_users
-  //ecr_repository_name_products   = var.ecr_repository_name_products
 }
 
 module "ecs_fargate" {
@@ -66,27 +60,4 @@ module "ecs_fargate" {
   ecs_service_requests   = var.ecs_service_requests
   ecs_service_payments   = var.ecs_service_payments
   ecs_service_users      = var.ecs_service_users
-  //ecs_service_products   = var.ecs_service_products
 }
-
-//module "eks" {
-//  source         = "./modules/eks"
-//  prefix         = var.prefix
-//  vpc_id         = module.new-vpc.vpc_id
-//  cluster_name   = var.cluster_name
-//  retention_days = var.retention_days
-//  subnet_ids     = module.new-vpc.subnet_ids
-//  desired_size   = var.desired_size
-//  max_size       = var.max_size
-//  min_size       = var.min_size
-//}
-//
-//module "cognito" {
-//  source = "./modules/cognito"
-//}
-//
-//module "api_gateway" {
-//  source      = "./modules/api_gateway"
-//  name        = "${var.prefix}-api-gateway"
-//  description = "API Gateway for ${var.prefix}"
-//}
