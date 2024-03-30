@@ -8,4 +8,3 @@ variable "security_group_id" {}
 variable "ecs_service_requests" {}
 variable "ecs_service_payments" {}
 variable "ecs_service_users" {}
-//variable "ecs_service_products" {}
